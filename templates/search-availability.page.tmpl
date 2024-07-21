@@ -18,8 +18,8 @@
         <div class="col">
             <h1 class="mt-4">Search for Availability</h1>
 
-            <form action="" method="get" novalidate class="needs-validation">
-
+            <form action="/search-availability" method="post" novalidate class="needs-validation">
+                <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
                 <div class="row mb-4" id="reservation-dates">
                     <div class="form-group col-3">
                         <input required class="form-control" type="text" placeholder="Check-in date" name="start">      
